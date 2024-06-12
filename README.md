@@ -31,7 +31,7 @@ This project is a blog website built with express that allows users to read and 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/blog-website.git
+   git clone https://github.com/vaishanvikapadi/blog-website.git
     
 2. **Run Command**
     ```bash
