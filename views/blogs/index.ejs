@@ -1,0 +1,49 @@
+
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <p>
+        <div class="Blog_button">
+            <h1>Publish your passions, your way</h1>
+            <br />
+            <h3>Create a unique and beautiful blog easily.</h3>
+            <br />
+            <form method="GET" action="/create-blog">
+                <button type="submit" class="edit-btn">Create Your Blog</button>
+            </form>
+        </div>
+    </p>
+    <!-- <h4 id="scrollspyHeading2">Blogs</h4> -->
+    <p>
+      <h2 id="scrollspyHeading2" style="color: brown;">Blogs</h2>
+      <div class="Post_Container">
+        <% if (blogs.length > 0) { %>
+            <% blogs.forEach(blog => { %>
+                <div class="card" style="width: 100%">
+                    <img src="/uploads/<%=blog.image%>" class="card-img-top" alt="Blog image" style="height: 300px;" >
+                    <div class="card-body">
+                        <h5 class="card-title"><%= blog.title %></h5>
+                       
+                        <p class="card-text"><%= blog.description %></p>
+                    </div>
+                    <div class="card-button">
+                        <a href="/blogs/<%= blog.post_id %>/update" class="card-link"><button style="background-color: rgb(58, 171, 197); color: white; border: white; height: 2.5rem; border-radius: 5px;">&nbsp;&nbsp;Update&nbsp;&nbsp;</button></a>
+                        <!-- <a href="/delete" class="card-link">delete</a> -->
+                        <form method="POST" action="/blogs/<%=blog.post_id %>?_method=DELETE">
+                            <button style="background-color: brown; color: white; border: white; height: 2.5rem; border-radius: 5px;">&nbsp;&nbsp;Delete&nbsp;&nbsp;</button>
+                        </form>
+                    </div>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>No blogs found.</p>
+        <% } %>
+      </div>
+    </p>
+    <!-- <h4 id="scrollspyHeading3">Third heading</h4>
+    <p>Create</p> -->
+    <!-- <h4 id="scrollspyHeading4">Fourth heading</h4>
+    <p>...</p>
+    <h4 id="scrollspyHeading5">Fifth heading</h4>
+    <p>...</p> -->
+</div>
+
+

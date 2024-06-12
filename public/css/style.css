@@ -1,0 +1,198 @@
+/* Blog Create Button */
+
+/* .Blog_button{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.scrollspy-example {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height for demonstration */
+    background-color: #f8f9fa; /* Background color for visual demonstration */
+  }
+
+  .Blog_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ecef; /* Light background for the button section */
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+  }
+
+  .Blog_button h1,
+  .Blog_button h3 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .edit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .edit-btn:hover {
+    background-color: #0056b3;
+  }
+
+
+  /*Post Card*/
+
+  .Post_Container{
+    height: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    
+   
+  }
+  .card{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding: 2rem;
+
+  }
+  .card-body{
+    display: flexbox;
+   text-align: center;
+    
+  }
+
+  .card-button{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /*Create Blogs */
+
+  .main_container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main_container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.main_container form {
+    display: flex;
+    flex-direction: column;
+}
+.main_container form div {
+    margin-bottom: 15px;
+}
+.main_container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+.main_container input[type="text"],
+.main_container textarea {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+.main_container input[type="file"] {
+    border: none;
+    padding: 5px 0;
+}
+.main_container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.main_container button:hover {
+    background-color: #45a049;
+}
+
+/*Signup Page*/
+/* .form_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-width: 100%;
+} */
+
+.form_div {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-width: 100%;
+  text-align: center;
+}
+.form_div h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+.form_div form {
+  display: flex;
+  flex-direction: column;
+}
+.form_div form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 22px); /* Adjusting for padding and border */
+  font-size: 14px;
+}
+.form_div form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form_div form button:hover {
+  background-color: #45a049;
+}
+.form_div p {
+  margin-top: 15px;
+  color: #555;
+}
+.form_div p a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form_div p a:hover {
+  text-decoration: underline;
+}
+
+
+  
